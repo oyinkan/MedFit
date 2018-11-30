@@ -1,0 +1,286 @@
+:root {
+	--icon-color : rgb(116, 204, 239);
+}
+#navbar-main {
+  background: #f9f9f9;
+}
+.logo {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 32px;
+  color: #154A9A;
+  text-transform: none;
+}
+.navbar-nav .nav-link .nav-link-inner--text {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.7;
+}
+.medfit {
+  color: red;
+}
+/*.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  margin-top: 20px;
+}*/
+.employees {
+  font-size: 32px;
+  font-weight: bold;
+}
+.teamofexperts-div {
+  width: 55%;
+  margin: 0 auto;
+}
+.teamofexperts {
+  line-height: 28px;
+  font-size: 18px;
+}
+.getstarted {
+  margin-top: 30px;
+  background: linear-gradient(180deg, #E9E9E9 0%, #FFFFFF 100%);
+  border-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 50px;
+  letter-spacing: 0.05em;
+  color: #154A9A;
+}
+#services-div, #certficates-div {
+  padding: 5rem 0;
+  background: #f9f9f9;
+}
+.ourservices {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+.services-line {
+  width: 145px;
+  border: 2px solid #154A9A;
+  margin-top: -20px;
+  position: relative;
+  left: -20px; 
+  margin-bottom: 60px;
+}
+.awesome-service {
+  font-size: 18px;
+  color: #000;
+}
+.service-details, 
+.footer .nav .nav-item a.nav-link, .footer .footer-link {
+  font-size: 14px;
+  color: #000!important;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.service-icon {
+  margin-bottom: 15px;
+}
+#review-div {
+  background: url(./../../assets/img/doctor.png);
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+#testresults {
+  background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+  border-color: #2763BF;
+  color: #fff;
+  margin-top: 50px;
+}
+.personalreview {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+.benefit-div {
+  width: 300px;
+  height: 225px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.benefit {
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  padding-top: 95px;
+}
+.footer {
+  background: #fff;
+}
+
+/* LOGIN PAGE */
+
+.login-div {
+  background: url(./../../assets/img/login.png);
+  background-repeat: no-repeat;
+  /*padding: 120px 0;*/
+}
+.login {
+  padding: 40px 0 100px 0;
+}
+.welcome-div {
+  margin-top: 40px;
+}
+.welcome {
+  font-size: 24px;
+  color: #000;
+}
+.details {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.7;
+  margin-top: -15px;
+}
+.login-form {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.focused .form-control {
+  border: 0.5px solid #000;
+}
+.account {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #000;
+}
+.register {
+  color: #154A9A;
+  font-weight: 600;
+  font-size: 16px;
+}
+.form-control {
+  /*font-size: 20px;*/
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.4;
+  border: 0.5px solid #000;
+  margin-top: 20px;
+}
+
+
+/* CLIENT LOGIN */
+.login-fieldset {
+  height: 50px; 
+  border: 0.5px solid rgba(40, 131, 210, 0.4); 
+  border-radius: 5px; 
+  padding: 10px;
+}
+#contractor {
+  margin-top: -35px; 
+  border: none; 
+  background: transparent;
+  font-size: 14px;
+  opacity: 1;
+}
+.login-button {
+  width: 100%;
+  background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+  border-color: #2763BF;
+  color: #fff;
+  margin-top: 60px; 
+}
+
+/* UPLOAD */
+.client-type {
+  background: #FFFFFF;
+  border: 1px solid #2883D2;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+}
+.upload-div {
+  margin-top: 50px;
+}
+.goback {
+  position: absolute;
+  left: 50px;
+  /*top: 15%;*/
+}
+.goback a {
+  color: #154A9A;
+  font-weight: 600;
+  font-size: 14px;
+}
+.questionmark {
+  position: absolute;
+  top: 39%;
+  right: 27%;
+}
+#nameoftest {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #F5F5F5;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+#upload-file {
+  height: 80px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: -17px;
+}
+.uploadmark {
+  position: absolute;
+  top: 13%;
+  right: -20%;
+}
+.upload-line {
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+.access-div label {
+  font-size: 18px;
+  color: #000;
+}
+#upload-value {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 1;
+}
+.bold {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 10px;
+  }
+  .login-form {
+    width: 80%;
+  }
+  .goback {
+    position: absolute;
+    left: 52px;
+    top: 16%;
+  }
+  .questionmark {
+    position: absolute;
+    top: 41%;
+    right: 5%;
+  }
+  .getstarted {
+    font-size: 16px;
+  }
+  
+}
+@media screen and (max-width: 550px) {
+  
+}
+@media screen and (max-width: 1000px) {
+  .benefit-div {
+    width: auto;
+  }
+  .login-form {
+    width: 65%;
+  }
+}
