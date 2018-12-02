@@ -11,7 +11,7 @@
   color: #154A9A;
   text-transform: none;
 }
-.navbar-nav .nav-link .nav-link-inner--text {
+.navbar-nav .nav-link .nav-link-inner--text, .personnel {
   font-size: 14px;
   color: #000;
   opacity: 0.7;
@@ -249,6 +249,173 @@
 .bold {
   font-weight: bold;
 }
+
+
+/* SUPERCLIENT DASHBOARD */
+.bookings {
+  font-size: 32px;
+  color: #000000;
+  opacity: 0.7;
+}
+.search-icon {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  opacity: 0.7;
+}
+.filter {
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.7;
+}
+.filter-icon {
+  margin-top: -3px;
+  margin-right: 15px;
+}
+/* table css */
+.table-responsive-stack tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.table-responsive-stack tbody tr {
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+  display:block;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .table-responsive-stack tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 3px solid #ccc;
+    display:block;   
+  }
+  /*  IE9 FIX   */
+  .table-responsive-stack td {
+    float: left\9;
+    width:100%;
+  }
+}
+.table th, .table td {
+  border-top: 0;
+  font-size: 14px;
+  /*padding-top: 25px;*/
+}
+.table thead {
+  background: #0F4290;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.more-info {
+  color: #154A9A;
+  background-color: transparent;
+  border: 1px solid #154A9A;
+  font-size: 14px;
+}
+.table-button {
+  padding-top: 30px;
+}
+.table thead th {
+  border-bottom: 0;
+}
+.pending {
+  color: #BD7E03;
+}
+.decline {
+  color: #BD0303;
+}
+.accept {
+  color: #019310;
+}
+.cancel {
+  color: #212121;
+}
+.done {
+  color: #154A9A;
+}
+.getaccess {
+  padding: 10px 40px;
+}
+.upload {
+  background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+  border-color: #2763BF;
+  border-radius: 5px;
+  color: #fff;
+}
+.personalinfo-div {
+  background: #FFFFFF;
+  padding: 15px;
+}
+.personal {
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.7;
+}
+.profilename {
+  font-size: 20px;
+  color: #000000;
+}
+.info-line {
+  opacity: 0.4;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+.lease {
+  font-size: 14px;
+  color: #000;
+}
+.booking-date {
+  font-size: 20px;
+  color: #ED1C24;
+}
+#bookinginfo-table thead{
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.blood-test {
+  background: #777777;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+}
+.accesscode-form {
+  margin: 19px;
+  margin-top: 45px;
+}
+.accesscode-form input {
+  margin-bottom: 45px;
+}
+.upload.usecode {
+  margin-top: -10px;
+} 
+td.table-button button {
+  margin-top: -10px;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
