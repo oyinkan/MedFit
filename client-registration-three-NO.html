@@ -17,6 +17,11 @@
   <!-- Argon CSS -->
   <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
   <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
+  <style>
+    .login-button {
+      padding: .625rem 1.25rem;
+    }
+  </style>
 </head>
 
 <body style="background: #f9f9f9;">
@@ -34,36 +39,43 @@
             <div class="welcome-div">
               <p class="welcome">Welcome back,</p>
               <p class="details">Kindly fill in the details below to register.</p>
-              <form class="login-form">
-                <div class="form-group medical text-left">
-                  <label for="">Do you have a company Medical Advisor?</label>
-                  <div>
-                    <label class="radio-inline"><input type="radio" name="optradio">Yes</label>&emsp;
-                    <label class="radio-inline"><input type="radio" name="optradio" checked>No</label>
+              <div class="login-form">
+                <div class="progress-div">
+                  <p class="progress-details progress-selected"></p>
+                  <p class="progress-details progress-selected"></p>
+                  <p class="progress-details progress-selected"></p>
+                </div>
+                <form>
+                  <div class="form-group medical text-left">
+                    <label for="">Do you have a company Medical Advisor?</label>
+                    <div>
+                      <label class="radio-inline"><input type="radio" name="optradio">Yes</label>&emsp;
+                      <label class="radio-inline"><input type="radio" name="optradio" checked>No</label>
+                    </div>
                   </div>
-                </div>
-                <p class="contact-person">Hospital Details</p>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="" placeholder="name of primary FTW provider">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="" placeholder="phone number">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="" placeholder="email address">
-                </div>
-                <div class="text-left">
-                  <a href="" class="add-hospital">+ Add another hospital</a>
-                </div>
-                <div class="row text-center">
-                  <div class="col-lg-6 col-md-6">
-                    <button class="btn btn-default btn-round login-button goback-button">GO BACK</button>
+                  <p class="contact-person">Hospital Details</p>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="name of primary FTW provider">
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <a href="client-registration-successful.html" class="btn btn-default btn-round getstarted login-button">NEXT</a>
-                  </div>  
-                </div>
-              </form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="phone number">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="" placeholder="email address">
+                  </div>
+                  <div class="text-left">
+                    <a href="" class="add-hospital">+ Add another hospital</a>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-lg-6 col-md-6">
+                      <button class="btn btn-default btn-round goback-button">GO BACK</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <a href="client-registration-successful.html" class="btn btn-default btn-round getstarted login-button">SUBMIT</a>
+                    </div>  
+                  </div>
+                </form>
+              </div>
               <p class="account">Have an account with us already? <a href="client-login.html" class="register">Login</a></p>
             </div>
           </div>
