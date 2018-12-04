@@ -192,11 +192,17 @@
   background: #FFFFFF;
   border: 1px solid #2883D2;
   border-radius: 5px;
-  padding: 15px;
-  font-weight: 600;
-  font-size: 16px;
   text-align: center;
   color: #000000;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.first-button {
+  margin-left: -20px;
+}
+.second-button {
+  margin-left: 10px;
 }
 .upload-div {
   margin-top: 50px;
@@ -300,6 +306,8 @@
   font-weight: bold;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .table-responsive-stack tr {
     -webkit-box-orient: vertical;
@@ -314,7 +322,36 @@
     float: left\9;
     width:100%;
   }
+}  
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .col-md-5 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .client-type {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
 }
+
+@media screen and (max-width: 990px) {
+  .client-type {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .first-button,
+  .second-button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+  .client-type {
+    font-size: 13px;
+  }
+}
+
 .table th, .table td {
   border-top: 0;
   font-size: 14px;
@@ -450,4 +487,29 @@ td.table-button button {
   .login-form {
     width: 65%;
   }
+}
+
+/* REGISTRATION */
+.first-button a span,
+.second-button a span {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 16px;
+}
+.first-button a p,
+.second-button a p {
+  font-size: 12px;
+  opacity: 0.4;
+}
+.goback-button {
+  width: 100%;
+  background: #fff;
+  border-color: #2763BF;
+  color: #154A9A;
+  margin-top: 60px;
+  padding: 15px 50px;
+}
+.contact-person {
+  font-size: 14px;
+  color: #000;
 }

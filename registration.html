@@ -25,6 +25,14 @@
     .login {
       padding: 40px 0 315px 0;
     }
+    .client-type {
+      background: #FFFFFF;
+      border: 1px solid #2883D2;
+      border-radius: 5px;
+      padding: 15px 15px 0 15px;
+      text-align: center;
+      color: #000000;
+    }
   </style>
 </head>
 
@@ -42,23 +50,32 @@
             </a>
             <div class="welcome-div">
               <p class="welcome">Upload your test results</p>
-              <p class="details">Kindly select which one of these best describe you</p>
+              <p class="details">Kindly select which user category best fits</p>
               <form class="upload-div">
                 <div class="row">
                   <div class="col-lg-1 col-md-1"></div>
                   <div class="col-lg-5 col-md-5">
                     <div class="first-button">
-                      <button class="btn btn-default btn-round client-type">I am a staff of a MedFit Client. I want<br> my test review sent to the firm</button>
+                      <a href="" class="btn btn-default btn-round client-type">
+                        <span>For Contractors</span>
+                        <p>Register your company to get your staff’ medical<br> reports assessed for fitness to work and get a<br> MedFit Certificate</p>
+                      </a>
                     </div>
                   </div>
                   <div class="col-lg-5 col-md-5">
                     <div class="second-button">
-                      <button class="btn btn-default btn-round client-type">I am a staff of a MedFit Client. I want<br> my test review sent to the firm</button>
+                      <a href="partner-registration.html" class="btn btn-default btn-round client-type">
+                        <span>For Partners</span>
+                        <p>Register your hospital and get approved/enlisted to <br>conduct medical tests for staff that require a<br> MedFit Certififcate to work.</p>
+                      </a>
                     </div>
                   </div>
                   <div class="col-lg-1 col-md-1"></div>
                 </div>
               </form>
+              <div style="margin-top: 100px;">
+                <p class="details account">Have an account with us already? <a href="partner-login.html" class="register">Login</a></p>
+              </div>
             </div>
           </div>
         </div>
