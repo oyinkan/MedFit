@@ -35,44 +35,172 @@
               <p class="welcome">Welcome back,</p>
               <p class="details">Kindly fill in the details below to register.</p>
               <div class="login-form">
-                <div class="progress-div">
+                <!-- <div class="progress-div">
                   <p class="progress-details progress-selected"></p>
                   <p class="progress-details"></p>
                   <p class="progress-details"></p>
-                </div>
+                </div> -->
                 <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="name of company">
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control" id="">
-                      <option>nature of work rendered</option>
-                      <option>Client</option>
-                      <option>Partner</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control" id="">
-                      <option>staff strength</option>
-                      <option>Client</option>
-                      <option>Partner</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control" id="">
-                      <option>personnel per project</option>
-                      <option>Client</option>
-                      <option>Partner</option>
-                    </select>
-                  </div>
-                  <div class="row text-center">
-                    <div class="col-lg-6 col-md-6">
-                      <button class="btn btn-default btn-round goback-button">GO BACK</button>
+                  <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                      <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="name of company">
+                          </div>
+                          <div class="form-group">
+                            <select class="form-control" id="">
+                              <option>nature of work rendered</option>
+                              <option>Client</option>
+                              <option>Partner</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <select class="form-control" id="">
+                              <option>staff strength</option>
+                              <option>Client</option>
+                              <option>Partner</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <select class="form-control" id="">
+                              <option>personnel per project</option>
+                              <option>Client</option>
+                              <option>Partner</option>
+                            </select>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round goback-button">GO BACK</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <a href="" class="btn btn-default btn-round getstarted login-button">NEXT</a>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="company address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="company phone number">
+                          </div>
+                          <p class="contact-person">Details of Contact Person. Primary contact for Medfit Liason e.g. receipt of certificate.</p>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="designation">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="phone number">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="email address">
+                          </div>
+                          <div class="row text-center">
+                            <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round login-button goback-button">GO BACK</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <a href="" class="btn btn-default btn-round getstarted login-button">NEXT</a>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div>
+                          <div class="form-group medical text-left">
+                            <label for="">Do you have a company Medical Advisor?</label>
+                            <div>
+                              <label class="radio-inline"><input type="radio" name="optradio" checked>Yes</label>&emsp;
+                              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="phone number">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="email address">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="qualification">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="specialty">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="MDCN Reg Nos.">
+                          </div>
+                          <p class="contact-person">Hospital Details</p>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="name of primary FTW provider">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="phone number">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="email address">
+                          </div>
+                          <div class="text-left">
+                            <a href="" class="add-hospital">+ Add another hospital</a>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round goback-button">GO BACK</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <a href="client-registration-three-NO.html" class="btn btn-default btn-round getstarted login-button">SUBMIT</a>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div>
+                          <div class="form-group medical text-left">
+                            <label for="">Do you have a company Medical Advisor?</label>
+                            <div>
+                              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>&emsp;
+                              <label class="radio-inline"><input type="radio" name="optradio" checked>No</label>
+                            </div>
+                          </div>
+                          <p class="contact-person">Hospital Details</p>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="name of primary FTW provider">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="phone number">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="email address">
+                          </div>
+                          <div class="text-left">
+                            <a href="" class="add-hospital">+ Add another hospital</a>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round goback-button">GO BACK</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <a href="" class="btn btn-default btn-round getstarted login-button">SUBMIT</a>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                      <a href="client-registration-two.html" class="btn btn-default btn-round getstarted login-button">NEXT</a>
-                    </div>  
                   </div>
+                  
                 </form>
               </div>
               <p class="account">Have an account with us already? <a href="client-login.html" class="register">Login</a></p>
