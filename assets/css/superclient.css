@@ -155,6 +155,101 @@ button.navbar-toggle {
 }
 
 
+/* SUPERCLIENTS DASHBOARD */
+.fairly-bold {
+  font-weight: 600;
+}
+.expired {
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.7;
+}
+.dashboardunits-div {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#dashboardunits-div {
+  height: 290px;
+}
+.superclients-date {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 10px;
+  color: #154A9A;
+}
+.superclients-line {
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  margin-top: -10px;
+}
+.units-amount {
+  font-size: 48px;
+  color: #000;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.total-units {
+  font-size: 14px;
+  color: black;
+  opacity: 0.7;
+}
+.contractors-div {
+  margin-bottom: 10px;
+}
+#btn-contractor {
+  text-transform: capitalize; 
+  background: linear-gradient(180deg, #B01F17 0%, #D34139 100%);
+  border-color: #b01f17;
+}
+.space-top {
+  margin-top: 25px;
+}
+.space-top-twice {
+  margin-top: 50px;
+}
+.space-bottom {
+  margin-bottom: 15px;
+}
+.btn-allocate {
+  background: #212121;
+  border-color: #212121;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.icon {
+  margin-left: 20px;
+}
+.modal {
+  top: 120px;
+}
+.modal-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: normal;
+}
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+}
+/*.modal-header {
+  border-bottom: 0;
+}*/
+.modal-footer {
+  border: 0;
+  justify-content: center;
+  margin-top: -20px;
+}
+.btn-switch {
+  position: absolute;
+  left: 40%;
+  top: 8px;
+  background: transparent;
+  border: 0.5px solid #154A9A;
+  color: #154a9a;
+  text-transform: none;
+}
+
 
 
 
@@ -219,3 +314,19 @@ button.navbar-toggle {
     width: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .btn-switch {
+    position: static;
+  }
+  .notification {
+    position: relative;
+    left: -60px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .btn-switch {
+    left: 30%;
+  }

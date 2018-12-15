@@ -19,9 +19,30 @@
    <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <style>
-   .table-responsive-stack tbody tr {
-     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-   }
+      .sidebar-nav li.active, .sidebar-nav li a:hover {
+         background: #8B0C0C;
+      }
+      .table-responsive-stack tbody tr {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+      }
+      .dropdown-menu.show {
+         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .table thead {
+         background: transparent;
+         color: #000;
+         font-size: 14px;
+         opacity: 0.7;
+      }
+      .more-info {
+         border: 1px solid #212121;
+         color: #212121;
+         text-transform: capitalize;
+         padding: 5px 30px;
+      }
+      .dropdown-menu .dropdown-item {
+         color: #154A9A;
+      }
    </style>
 </head>
 
@@ -43,9 +64,9 @@
                  
                </a>
                <div class="dropdown-menu">
-                 <a class="dropdown-item" href="#">All Users</a>
+                  <a class="dropdown-item" href="#">All Users</a>
                   <a class="dropdown-item" href="#">Messages</a>
-                 <a class="dropdown-item" href="#">Link 3</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
                </div>
             </li>
             <p class="notification">2</p>
@@ -60,21 +81,24 @@
                  <a class="dropdown-item" href="#">Link 3</a>
                </div>
             </li>
+            <li class="nav-item">
+               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Contractor</a>
+            </li>
          </ul>
       </div>
    </nav>
    <div id="wrapper">
       <!-- Sidebar -->
-      <div id="sidebar-wrapper">
+      <div id="sidebar-wrapper" style="background: rgba(139,12,12,0.9);">
          <ul class="sidebar-nav nav-pills nav-stacked" id="menu" style="padding-top: 130px;">
             <li>
-               <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
-            </li>
-            <li>
-               <a href="superclients.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
+               <a href="superclients-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
             </li>
             <li class="active">
-               <a href="superclients-results.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Results</a>
+               <a href="superclients-firms.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Contractors</a>
+            </li>
+            <li>
+               <a href="partners-results.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Wallets</a>
             </li>
             <li>
                <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>Help & Feedback</a>
@@ -84,120 +108,91 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
          <div class="container-fluid xyz">
-            <div style="margin-top: 50px;">
-               <p class="bookings">Booking Info</p>
-               <div class="row" style="margin-top: 35px; margin-bottom: 25px;">
+            <div class="space-top-twice">
+               <p class="bookings">Contractors</p>
+               <div class="row space-bottom">
                   <div class="col-lg-4 col-md-5">
-                     <i class="fa fa-search"></i>
-                  </div>
-                  <div class="col-lg-8 col-md-7">
-                     <div class="pull-right">
-                        <div class="row">
-                           <div class="col-lg-6 col-md-6">
-                              <button class="btn btn-default btn-round upload getaccess">Upload Result</button>
-                           </div>
-                           <div class="col-lg-6 col-md-6">
-                              <button class="btn btn-default btn-round more-info getaccess">Get Access Codes</button>
-                           </div>
-                        </div>
+                     <div>
+                        <a href=""><img src="assets/img/arrow.png" alt="arrow icon"></a>
                      </div>
                   </div>
                </div>
                <div class="row">
-                  <div class="col-lg-4 col-md-4">
+                  <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
-                        <p class="personal">PERSONNEL INFO</p>
-                        <div>
-                           <span class="profilename"><img src="assets/img/profile.png" alt="">&emsp;Chika Faith</span>
+                        <div class="contractors-div">
+                           <span class="profilename"><img src="assets/img/profile.png" alt="">&nbsp;Abdulrahman Khadri Chukwu</span>
                         </div>
-                        <span class="personnel">Personnel ID: </span><span class="lease">CSL56787833</span>
                         <p>
-                           <span class="personnel">Firm: </span><span class="lease">CSI Leasing</span>
+                           <span class="personnel">Staff email: </span><span class="lease">abdulkad@csileasing.com</span>
                         </p>
-                        <hr class="info-line">
-                        <p class="personal">BOOKING DATE</p>
-                        <div>
-                           <span class="booking-date"><img src="assets/img/calendar.png" alt="">&emsp;Sunday, 6th October, 2018</span>
-                        </div>
+                        <p>
+                           <span class="personnel">Personnel ID: </span><span class="lease">CSL56787833</span>
+                        </p>
+                        <p>
+                           <span class="personnel">Duration: </span><span class="lease">48 months</span>
+                        </p>
+                        <p>
+                           <span class="personal">No. of due Certificates: </span><span class="lease">1</span>
+                        </p>
                      </div>
                   </div>
                   <div class="col-lg-8 col-md-8">
-                     <div style="margin-top: -24px;" id="bookinginfo-table">
+                     <div class="table-responsive table-responsive-sm table-responsive-md table-responsive-lg">
                         <table class="table table-responsive-stack">
                            <thead>
                               <tr>
-                                 <th style="width: 210px;">INVESTIGATION GROUPS</th>
-                                 <th>INVESTIGATION</th>
+                                 <th>CERTIFICATES</th>
+                                 <th>DUE DATES</th>
                                  <th></th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
-                                 <td class="">
-                                    <p class="blood-test">Blood test</p>
-                                    <p class="blood-test">Spatial test</p>
-                                    <p class="blood-test">Drug & alcohol</p>
-                                    <p class="blood-test">Another test</p>
-                                    <span>+3</span>
-                                 </td>
+                                 <td><img src="assets/img/contractor.png" alt="">&nbsp;Food Handlers</td>
+                                 <td>12/May/19</td>
                                  <td>
                                     <li class="nav-item dropdown">
-                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                         More 
-                                       </a>
+                                       <button class="btn more-info dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </button>
                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">All Users</a>
-                                          <a class="dropdown-item" href="#">Messages</a>
-                                          <a class="dropdown-item" href="#">Link 3</a>
+                                          <a class="dropdown-item" href="#">Preview</a>
+                                          <a class="dropdown-item" href="#">Download</a>
                                        </div>
                                     </li>
                                  </td>
                               </tr>
                               <tr>
-                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
-                                 <td class="">
-                                    <p class="blood-test">Blood test</p>
-                                    <p class="blood-test">Spatial test</p>
-                                    <p class="blood-test">Drug & alcohol</p>
-                                    <p class="blood-test">Another test</p>
-                                    <span>+3</span>
-                                 </td>
+                                 <td><img src="assets/img/contractor.png" alt="">&nbsp;Food Handlers</td>
+                                 <td style="color: #BD0303;">11/Aug/18</td>
                                  <td>
                                     <li class="nav-item dropdown">
-                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                         More 
-                                       </a>
+                                       <button class="btn more-info dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </button>
                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">All Users</a>
-                                          <a class="dropdown-item" href="#">Messages</a>
-                                          <a class="dropdown-item" href="#">Link 3</a>
+                                          <a class="dropdown-item" href="#">Preview</a>
+                                          <a class="dropdown-item" href="#">Download</a>
                                        </div>
                                     </li>
                                  </td>
                               </tr>
                               <tr>
-                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
-                                 <td class="">
-                                    <p class="blood-test">Blood test</p>
-                                    <p class="blood-test">Spatial test</p>
-                                    <p class="blood-test">Drug & alcohol</p>
-                                    <p class="blood-test">Another test</p>
-                                    <span>+3</span>
-                                 </td>
+                                 <td><img src="assets/img/contractor.png" alt="">&nbsp;Food Handlers</td>
+                                 <td>12/May/19</td>
                                  <td>
                                     <li class="nav-item dropdown">
-                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                         More 
-                                       </a>
+                                       <button class="btn more-info dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </button>
                                        <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">All Users</a>
-                                          <a class="dropdown-item" href="#">Messages</a>
-                                          <a class="dropdown-item" href="#">Link 3</a>
+                                          <a class="dropdown-item" href="#">Preview</a>
+                                          <a class="dropdown-item" href="#">Download</a>
                                        </div>
                                     </li>
                                  </td>
-                              </tr>    
+                              </tr>
                            </tbody>
                         </table>
                      </div>
@@ -208,6 +203,9 @@
       </div>
    
 
+   
+
+   
    <!-- Core -->
    <script src="./assets/vendor/jquery/jquery.min.js"></script>
    <script src="./assets/vendor/popper/popper.min.js"></script>
@@ -221,7 +219,7 @@
    <script src="./assets/js/argon.js?v=1.0.1"></script>
    <script src="./assets/js/table.js"></script>
    <script>
-         $("#menu-toggle").click(function(e) {
+      $("#menu-toggle").click(function(e) {
          e.preventDefault();
          $("#wrapper").toggleClass("toggled");
       });
@@ -257,3 +255,5 @@
 
 </body>
 </html>
+
+

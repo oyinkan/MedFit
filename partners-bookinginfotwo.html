@@ -18,6 +18,11 @@
    <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
    <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <style>
+   .table-responsive-stack tbody tr {
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+   }
+   </style>
 </head>
 
 <body style="background: #f9f9f9;">
@@ -66,10 +71,10 @@
                <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
             </li>
             <li>
-               <a href="superclients.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
+               <a href="partners.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
             </li>
             <li class="active">
-               <a href="superclients-results.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Results</a>
+               <a href="spartners-results.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Results</a>
             </li>
             <li>
                <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>Help & Feedback</a>
@@ -78,101 +83,124 @@
       </div>
       <!-- Page Content -->
       <div id="page-content-wrapper">
-         <div class="container-fluid">
-            <div class="xyz">
+         <div class="container-fluid xyz">
+            <div style="margin-top: 50px;">
                <p class="bookings">Booking Info</p>
                <div class="row" style="margin-top: 35px; margin-bottom: 25px;">
                   <div class="col-lg-4 col-md-5">
                      <i class="fa fa-search"></i>
+                  </div>
+                  <div class="col-lg-8 col-md-7">
+                     <div class="pull-right">
+                        <div class="row">
+                           <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round upload getaccess">Upload Result</button>
+                           </div>
+                           <div class="col-lg-6 col-md-6">
+                              <button class="btn btn-default btn-round more-info getaccess">Get Access Codes</button>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <div class="row">
                   <div class="col-lg-4 col-md-4">
                      <div class="personalinfo-div">
                         <p class="personal">PERSONNEL INFO</p>
-                        <div class="text-center">
-                           <p>Fill in the details and click button to generate access codes</p>
-                           <form class="accesscode-form">
-                              <div class="form-group">
-                                 <input type="text" class="form-control" name="" placeholder="how many access code units?">
-                                 <button class="btn btn-default btn-round upload getaccess">Generate Code</button>
-                              </div>
-                           </form>
+                        <div>
+                           <span class="profilename"><img src="assets/img/profile.png" alt="">&emsp;Chika Faith</span>
+                        </div>
+                        <span class="personnel">Personnel ID: </span><span class="lease">CSL56787833</span>
+                        <p>
+                           <span class="personnel">Firm: </span><span class="lease">CSI Leasing</span>
+                        </p>
+                        <hr class="info-line">
+                        <p class="personal">BOOKING DATE</p>
+                        <div>
+                           <span class="booking-date"><img src="assets/img/calendar.png" alt="">&emsp;Sunday, 6th October, 2018</span>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-8 col-md-8">
-                     <div class="table-responsive table-responsive-sm table-responsive-md table-responsive-lg" style="margin-top: -24px;" id="bookinginfo-table">
+                     <div style="margin-top: -24px;" id="bookinginfo-table">
                         <table class="table table-responsive-stack">
                            <thead>
                               <tr>
-                                 <th>ACCESS CODES</th>
-                                 <th>DATE GENERATED</th>
-                                 <th>
-                                    
-                                 </th>
+                                 <th style="width: 210px;">INVESTIGATION GROUPS</th>
+                                 <th>INVESTIGATION</th>
+                                 <th></th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
+                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
+                                 <td class="">
+                                    <p class="blood-test">Blood test</p>
+                                    <p class="blood-test">Spatial test</p>
+                                    <p class="blood-test">Drug & alcohol</p>
+                                    <p class="blood-test">Another test</p>
+                                    <span>+3</span>
+                                 </td>
                                  <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
+                                    <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         More 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">All Users</a>
+                                          <a class="dropdown-item" href="#">Messages</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                       </div>
+                                    </li>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
+                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
+                                 <td class="">
+                                    <p class="blood-test">Blood test</p>
+                                    <p class="blood-test">Spatial test</p>
+                                    <p class="blood-test">Drug & alcohol</p>
+                                    <p class="blood-test">Another test</p>
+                                    <span>+3</span>
+                                 </td>
                                  <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
+                                    <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         More 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">All Users</a>
+                                          <a class="dropdown-item" href="#">Messages</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                       </div>
+                                    </li>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
+                                 <td><img src="assets/img/food.png" alt="">&emsp;Food Handlers Test</td>
+                                 <td class="">
+                                    <p class="blood-test">Blood test</p>
+                                    <p class="blood-test">Spatial test</p>
+                                    <p class="blood-test">Drug & alcohol</p>
+                                    <p class="blood-test">Another test</p>
+                                    <span>+3</span>
+                                 </td>
                                  <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
+                                    <li class="nav-item dropdown">
+                                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         More 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">All Users</a>
+                                          <a class="dropdown-item" href="#">Messages</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                       </div>
+                                    </li>
                                  </td>
                               </tr>    
                            </tbody>
                         </table>
                      </div>
-                     <hr>
-                     <table class="table table-responsive-stack"  id="bookinginfo-table">
-                        <thead>
-                              <tr>
-                                 <th>ACCESS CODES</th>
-                                 <th>DATE GENERATED</th>
-                                 <th>
-                                    
-                                 </th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
-                                 <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
-                                 <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>324DXXXXX</td>
-                                 <td>12/Oct/18</td>
-                                 <td>
-                                    <button class="btn btn-default btn-round upload usecode getaccess">Use Code</button>
-                                 </td>
-                              </tr>    
-                           </tbody>
-                     </table>
                   </div>
                </div>
             </div>
