@@ -19,41 +19,23 @@
    <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <style>
-      .sidebar-nav li.active, .sidebar-nav li a:hover {
-         background: #8B0C0C;
-      }
       .more-info {
-         border: 1px solid #212121;
-         color: #212121;
          padding: 5px 30px;
-         text-transform: capitalize;
       }
       .info-line {
          margin-top: 0;
       }
-      .focused .form-control.allocate-modal {
-         border: 0;
+      .btn-switch {
+         border: 0.5px solid #B02018;
+         color: #B02018;
       }
-      .form-control.allocate-modal:focus {
-         color: rgba(0, 0, 0, 0.7);
-         background-color: #c4c4c4;
+      #btn-contractor {
+         background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+         border-color: #154A9A;
+         padding: 10px 50px;
       }
-      .form-control.allocate-modal {
-         background: #c4c4c4;
-         margin-top: -10px;
-         text-align: center;
-         border: 1px solid #c4c4c4;
-         border-radius: 5px;
-         color: rgba(0, 0, 0, 0.7);
-         opacity: 1;
-      }
-      #allocate-units {
-         color: #000;
-      }
-      #allocate-units-input {
-         background: #FFFFFF;
-         border: 0.5px solid #000000;
-         color: #000;
+      .btn-book {
+         padding: 5px 15px;
       }
       @media screen and (min-width: 769px) and (max-width: 1200px) {
          .col-md-6 {
@@ -94,7 +76,7 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                  <img src="assets/img/health.png" alt="avatar">
-                  ExxonMobil
+                  CSI Leasing Inc
                </a>
                <div class="dropdown-menu">
                  <a class="dropdown-item" href="#">All Users</a>
@@ -103,20 +85,26 @@
                </div>
             </li>
             <li class="nav-item">
-               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Contractor</a>
+               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Super Contractor</a>
             </li>
          </ul>
       </div>
    </nav>
    <div id="wrapper">
       <!-- Sidebar -->
-      <div id="sidebar-wrapper" style="background: rgba(139,12,12,0.9);">
+      <div id="sidebar-wrapper">
          <ul class="sidebar-nav nav-pills nav-stacked" id="menu" style="padding-top: 130px;">
             <li>
-               <a href="superclients-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+               <a href="client-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+            </li>
+            <li>
+               <a href="client-staff.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Staff</a>
+            </li>
+            <li>
+               <a href="client-bookings.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
             </li>
             <li class="active">
-               <a href="superclients-firms.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Contractors</a>
+               <a href="client-supercontractors.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Super Contractors</a>
             </li>
             <li>
                <a href=""><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Wallets</a>
@@ -130,20 +118,20 @@
       <div id="page-content-wrapper">
          <div class="container-fluid xyz">
             <div class="space-top-twice">
-               <p class="bookings">Contractors</p>
+               <p class="bookings">Super Contractors</p>
                <div class="row space-bottom">
                   <div class="col-lg-4 col-md-5">
                      <form>
                         <div class="form-group">
-                           <input type="text" class="form-control" name="" placeholder="Search contractors or staff">
+                           <input type="text" class="form-control" name="" placeholder="Search S. Contractors">
                            <i class="fa fa-search search-icon"></i>
                         </div>
                      </form>
                   </div>
                   <div class="col-lg-8 col-md-7">
                      <div class="pull-right space-top">
-                        <button class="btn btn-round upload getaccess" id="btn-contractor">Add Contractor</button>
-                        <a href="" class="icon"><img src="assets/img/icon-one.png" alt=""></a>
+                        <button class="btn btn-round upload getaccess" id="btn-contractor" data-toggle="modal" data-target="#myModal">Add S. Contractor</button>
+                        <a href="" class="icon"><img src="assets/img/icon-one-blue.png" alt=""></a>
                         <a href="" class="icon"><img src="assets/img/icon-two.png" alt=""></a>
                      </div>
                   </div>
@@ -152,27 +140,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;ExxonMobil</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">EXM2238971</span>
                         </p>
                         <p>
                            <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">50</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -181,27 +169,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Halogen Securities</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Schlumberger</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">SCB4421777</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">4</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">40</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">150</span>
+                           <span class="personnel">Units Allocated: </span><span class="lease">250</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -210,27 +198,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Nestle</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">NEL5673000</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">25</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">125</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -241,27 +229,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;ExxonMobil</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">EXM2238971</span>
                         </p>
                         <p>
                            <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">50</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -270,27 +258,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Halogen Securities</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Schlumberger</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">SCB4421777</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">4</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">40</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">150</span>
+                           <span class="personnel">Units Allocated: </span><span class="lease">250</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -299,27 +287,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Nestle</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">NEL5673000</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">25</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">125</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -330,27 +318,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;ExxonMobil</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">EXM2238971</span>
                         </p>
                         <p>
                            <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">50</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -359,27 +347,27 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Halogen Securities</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Schlumberger</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">SCB4421777</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">4</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">40</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">150</span>
+                           <span class="personnel">Units Allocated: </span><span class="lease">250</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
@@ -388,36 +376,38 @@
                   <div class="col-lg-4 col-md-4 space-top">
                      <div class="personalinfo-div">
                         <div class="contractors-div">
-                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;CSI Leasing Inc</span>
+                           <span class="profilename"><img src="assets/img/contractor.png" alt="">&emsp;Nestle</span>
                         </div>
                         <p>
-                           <span class="personnel">Client ID: </span><span class="lease">CSL56787833</span>
+                           <span class="personnel">ID: </span><span class="lease">NEL5673000</span>
                         </p>
                         <p>
-                           <span class="personnel">No of Staff Contracted: </span><span class="lease">12</span>
+                           <span class="personnel">No of Staff Contracted: </span><span class="lease">25</span>
                         </p>
                         <p>
-                           <span class="personal">Units Used: </span><span class="lease">50</span>
+                           <span class="personal">Units Allocated: </span><span class="lease">125</span>
                         </p>
                         <hr class="info-line">
                         <div class="row">
                            <div class="col-lg-6 col-md-6">
                               <div>
-                                 <button class="btn btn-allocate" data-toggle="modal" data-target="#myModal">Allocate units</button>
+                                 <a href="client-supercontractors-outsource.html" class="btn btn-book">Outsource Staff</a>
                               </div>
                            </div>
                            <div class="col-lg-6 col-md-6">
                               <div class="pull-right">
-                                 <a href="superclients-firm-moreinfo.html" class="btn more-info">More Info</a>
+                                 <a href="contractor-staff-moreinfo.html" class="btn more-info">More Info</a>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
+               </div>    
             </div>
          </div>
       </div>
+   
+
    
 
    
@@ -430,64 +420,31 @@
        
                <!-- Modal Header -->
                <div class="modal-header">
-                 <h4 class="modal-title">Allocate Units - <span style="opacity: 0.4;">CSI Leasing</span></h4>
+                 <h4 class="modal-title">Add Staff</h4>
                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                </div>
 
 
                <!-- Modal body -->
                <div class="modal-body">
-                  <div class="row space-bottom">
-                     <div class="col-lg-6 col-md-6">
-                        <div>
-                           <label>Total Available Units</label>
-                        </div>
+                  <p class="text-center necessary">Kindly fill in the necessary details</p>
+                  <div style="width: 70%; margin: 0 auto;">
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="" placeholder="staff name">
                      </div>
-                     <div class="col-lg-2 col-md-2"></div>
-                     <div class="col-lg-4 col-md-4">
-                        <div class="pull-right">
-                           <div class="form-group">
-                              <input type="text" class="form-control allocate-modal" name="" placeholder="1200">
-                           </div>
-                        </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" name="" placeholder="staff email">
                      </div>
-                  </div>
-                  <div class="row space-bottom">
-                     <div class="col-lg-6 col-md-6">
-                        <div>
-                           <label id="allocate-units">Allocate Units</label>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-2"></div>
-                     <div class="col-lg-4 col-md-4">
-                        <div class="pull-right">
-                           <div class="form-group">
-                              <input type="text" class="form-control allocate-modal" name="" id="allocate-units-input" placeholder="0">
-                           </div>
-                        </div>
+                     <select class="form-control" id="" style="margin-bottom: 50px;">
+                        <option>employment type</option>
+                        <option>Full-time</option>
+                        <option>Contract</option>
+                     </select>
+                     <div class="text-center">
+                        <button class="btn" id="btn-contractor" style="padding: 7px 30px; color: #fff;">Add Staff</button>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6">
-                        <div>
-                           <label>Total Units Left</label>
-                        </div>
-                     </div>
-                     <div class="col-lg-2 col-md-2"></div>
-                     <div class="col-lg-4 col-md-4">
-                        <div class="pull-right">
-                           <div class="form-group">
-                              <input type="text" class="form-control allocate-modal" name="" placeholder="1200">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- Modal footer -->
-               <div class="modal-footer">
-                 <button type="button" class="btn more-info" data-dismiss="modal" style="padding: 5px 30px;">Cancel</button>
-                 <button type="button" class="btn btn-allocate" data-dismiss="modal" style="padding: 5px 40px;">Allocate</button>
+                  <p class="text-center addmorestaff">Want to add more than one staff at a time? Try <a href="" class="bulk-add">Bulk Add</a></p>
                </div>
             </form>
          </div>

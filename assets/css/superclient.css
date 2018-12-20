@@ -216,6 +216,7 @@ button.navbar-toggle {
   color: #fff;
   text-transform: capitalize;
   font-size: 14px;
+  padding: 5px 15px;
 }
 .icon {
   margin-left: 20px;
@@ -250,7 +251,43 @@ button.navbar-toggle {
   text-transform: none;
 }
 
-
+/* clients dashboard */
+.btn-book {
+  background: #154A9A;
+  border-color: #154A9A;
+  padding: 5px 40px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.btn-book:hover {
+  color: #fff;
+}
+.necessary {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.addmorestaff {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: 10px;
+}
+.select-staff, .staff-selected {
+  font-size: 18px;
+}
+.select-staff {
+  opacity: 0.7;
+}
+.text-20 {
+  font-size: 20px;
+  color: #000;
+}
+.medresult-date {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
 
 
 @media (max-width: 768px) {

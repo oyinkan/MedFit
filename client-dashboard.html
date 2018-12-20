@@ -19,18 +19,15 @@
    <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <style>
-      .sidebar-nav li.active, .table thead, .sidebar-nav li a:hover {
-         background: #8B0C0C;
-      }
-      .more-info {
-         border: 1px solid #212121;
-         color: #212121;
-      }
       @media screen and (min-width: 769px) and (max-width: 1100px) {
          .col-md-6 {
             max-width: 100%;
             flex: 0 0 100%;
          }
+      }
+      .btn-switch {
+         border: 0.5px solid #B02018;
+         color: #B02018;
       }
    </style>
 </head>
@@ -62,7 +59,7 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                  <img src="assets/img/health.png" alt="avatar">
-                  ExxonMobil
+                  CSI Leasing Inc
                </a>
                <div class="dropdown-menu">
                  <a class="dropdown-item" href="#">All Users</a>
@@ -71,20 +68,26 @@
                </div>
             </li>
             <li class="nav-item">
-               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Contractor</a>
+               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Super Contractor</a>
             </li>
          </ul>
       </div>
    </nav>
    <div id="wrapper">
       <!-- Sidebar -->
-      <div id="sidebar-wrapper" style="background: rgba(139,12,12,0.9);">
+      <div id="sidebar-wrapper">
          <ul class="sidebar-nav nav-pills nav-stacked" id="menu" style="padding-top: 130px;">
             <li class="active">
-               <a href="superclients-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+               <a href="client-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
             </li>
             <li>
-               <a href="superclients-firms.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Contractors</a>
+               <a href="client-staff.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Staff</a>
+            </li>
+            <li>
+               <a href="client-bookings.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
+            </li>
+            <li>
+               <a href="client-supercontractors.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Super Contractors</a>
             </li>
             <li>
                <a href=""><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Wallets</a>
@@ -106,7 +109,7 @@
                   </div>
                   <div class="col-lg-8 col-md-7">
                      <div class="pull-right">
-                        <p class="bookings fairly-bold">ID: EXM2238971</p>
+                        <p class="bookings fairly-bold">ID: CSL2238971</p>
                      </div>
                   </div>
                </div>
@@ -129,73 +132,82 @@
                         <table class="table table-responsive-stack">
                            <thead>
                               <tr>
-                                 <th>Contractors</th>
-                                 <th>Patient</th>
-                                 <th>No. of Due Certs.</th>
+                                 <th>Staff</th>
+                                 <th>Type</th>
+                                 <th>Inv. Group</th>
+                                 <th>Cert. Due</th>
                                  <th>Action</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td>CSI Leasing</td>
-                                 <td class="">12</td>
-                                 <td>3</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>Halogen Securities</td>
-                                 <td class="">4</td>
-                                 <td>1</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>GTBank</td>
-                                 <td class="">9</td>
-                                 <td>2</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>Linux Consulting</td>
-                                 <td class="">11</td>
-                                 <td>1</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>Offshore Engineering</td>
-                                 <td class="">65</td>
-                                 <td>20</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>Crux & Crux Ltd</td>
-                                 <td class="">1</td>
-                                 <td>1</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>BronX Servicing</td>
-                                 <td class="">34</td>
-                                 <td>12</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
                               </tr>
                               <tr>
-                                 <td>Halogen Securities</td>
-                                 <td class="">8</td>
-                                 <td>2</td>
+                                 <td>Daniel Emmanuel Olub</td>
+                                 <td>Full-time</td>
+                                 <td>Food Handlers</td>
+                                 <td class="decline">14/Aug/18</td>
                                  <td class="table-button">
                                     <a href="" class="btn btn-default btn-round more-info">More Info</a>
                                  </td>
@@ -215,7 +227,7 @@
                            <div class="col-lg-6 col-md-6">
                               <div>
                                  <p class="units-amount">2000</p>
-                                 <p class="total-units">Total units bought</p>
+                                 <p class="total-units">Total units</p>
                               </div>
                            </div>
                         </div>
@@ -228,7 +240,7 @@
                            <div class="col-lg-6 col-md-6">
                               <div>
                                  <p class="units-amount">95(15)</p>
-                                 <p class="total-units">Certificates (Staff)</p>
+                                 <p class="total-units">Staff members</p>
                               </div>
                            </div>
                         </div>

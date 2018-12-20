@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="MedFit">
+   <meta name="author" content="MedFit">
+   <title>MedFit</title>
+   <!-- Favicon -->
+   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   <!-- Icons -->
+   <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+   <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <!-- Argon CSS -->
+   <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+   <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
+   <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <style>
+      .table-responsive-stack tbody tr {
+         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+      }
+      #btn-contractor {
+         background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+         border-color: #154A9A;
+         padding: 10px 50px;
+      }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+         .col-md-6 {
+            max-width: 100%;
+            flex: 0 0 100%;
+         }
+         .pull-right {
+            float: left;
+         }
+      }
+      @media (min-width: 576px) {
+         .modal-dialog {
+            max-width: 700px;
+            margin: 1.75rem auto;
+         }
+      }
+   </style>
+</head>
+
+<body style="background: #f9f9f9;">
+   <nav class="navbar navbar-default no-margin">
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+         </button>
+         <a class="navbar-brand mr-lg-5" href="./index.html">
+            <p class="logo">Med<span class="medfit">Fit</span></p>
+         </a>
+      </div>
+      <div>
+         <ul class="nav navbar-nav" style="flex-direction: inherit;">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 <img src="assets/img/alarm.png" alt="">
+                 
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">All Users</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+               </div>
+            </li>
+            <p class="notification">2</p>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 <img src="assets/img/health.png" alt="avatar">
+                  CSI Leasing Inc
+               </a>
+               <div class="dropdown-menu">
+                 <a class="dropdown-item" href="#">All Users</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                 <a class="dropdown-item" href="#">Link 3</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Super Contractor</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+         <ul class="sidebar-nav nav-pills nav-stacked" id="menu" style="padding-top: 130px;">
+            <li>
+               <a href="client-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+            </li>
+            <li class="active">
+               <a href="client-staff.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Staff</a>
+            </li>
+            <li>
+               <a href="client-bookings.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
+            </li>
+            <li>
+               <a href="client-supercontractors.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Super Contractors</a>
+            </li>
+            <li>
+               <a href=""><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Wallets</a>
+            </li>
+            <li>
+               <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>Help & Feedback</a>
+            </li>
+         </ul>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+            <div style="margin-top: 50px;">
+               <p class="bookings">Staff Info</p>
+               <div class="row" style="margin-top: 35px; margin-bottom: 25px;">
+                  <div class="col-lg-4 col-md-5">
+                     <div>
+                        <a href=""><img src="assets/img/arrow-blue.png" alt="arrow icon"></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 col-md-7">
+                     <div class="pull-right">
+                        <button class="btn btn-round upload getaccess" id="btn-contractor" data-toggle="modal" data-target="#myModal">Book Staff</button>
+                        <button type="button" class="btn btn-primary more-info getaccess bold">
+                           Outsource Staff
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-md-4">
+                     <div class="personalinfo-div">
+                        <div>
+                           <span class="profilename"><img src="assets/img/profile.png" alt="">&emsp;Abdulrahman Khadri Chukwu</span>
+                        </div>
+                        <p>
+                           <span class="personnel">Staff Email: </span><span class="lease">abdulkad@exxonmobil.com</span>
+                        </p>
+                        <p>
+                           <span class="personnel">Personnel ID: </span><span class="lease">CSL56787833</span>
+                        </p>
+                        <p>
+                           <span class="personnel">Employment Type: </span><span class="lease">Contract</span>
+                        </p>
+                        <p>
+                           <span class="personnel">S. Contractors: </span><span class="lease">Exxon Mobil, Schlumberger, Nestle</span>
+                        </p>
+                        <p>
+                           <span class="personnel">No. of due Certificates: </span><span class="lease">1</span>
+                        </p>
+                        <hr class="info-line">
+                        <div class="text-center">
+                           <button type="button" class="btn btn-primary more-info getaccess">
+                              Edit Info
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8">
+                     <div style="margin-top: -24px;" id="bookinginfo-table">
+                        <table class="table table-responsive-stack">
+                           <thead>
+                              <tr>
+                                 <th>CERTIFICATES</th>
+                                 <th>DUE DATES</th>
+                                 <th></th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td><img src="assets/img/food.png" alt="">&nbsp;Food Handlers Test</td>
+                                 <td class="">12/May/19</td>
+                                 <td>
+                                    <li class="nav-item dropdown">
+                                       <a class="btn btn-round more-info nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item disabled" href="#">Update record</a>
+                                          <a class="dropdown-item done" href="#">Preview</a>
+                                          <a class="dropdown-item done" href="#">Download</a>
+                                          <a class="dropdown-item decline" href="#">Delete record</a>
+                                       </div>
+                                    </li>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><img src="assets/img/food.png" alt="">&nbsp;Food Handlers Test</td>
+                                 <td class="decline">12/May/19</td>
+                                 <td>
+                                    <li class="nav-item dropdown">
+                                       <a class="btn btn-round more-info nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item disabled" href="#">Update record</a>
+                                          <a class="dropdown-item done" href="#">Preview</a>
+                                          <a class="dropdown-item done" href="#">Download</a>
+                                          <a class="dropdown-item decline" href="#">Delete record</a>
+                                       </div>
+                                    </li>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><img src="assets/img/food.png" alt="">&nbsp;Food Handlers Test</td>
+                                 <td class="">12/May/19</td>
+                                 <td>
+                                    <li class="nav-item dropdown">
+                                       <a class="btn btn-round more-info nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                         Manage 
+                                       </a>
+                                       <div class="dropdown-menu">
+                                          <a class="dropdown-item disabled" href="#">Update record</a>
+                                          <a class="dropdown-item done" href="#">Preview</a>
+                                          <a class="dropdown-item done" href="#">Download</a>
+                                          <a class="dropdown-item decline" href="#">Delete record</a>
+                                       </div>
+                                    </li>
+                                 </td>
+                              </tr>    
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+
+
+
+
+
+
+   <!-- The Modal -->
+   <div class="modal" id="myModal">
+      <div class="modal-dialog">
+         <div class="modal-content" style="width: 100%;">
+            <form>
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h4 class="modal-title">Book Staff</h4>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                        <p class="text-center necessary">Kindly fill in the staff details</p>
+                        <div>
+                           <div class="form-group">
+                              <input type="text" class="form-control" name="" placeholder="staff name (autocomplete suggestions)">
+                           </div>
+                           <div class="form-group">
+                              <input type="text" class="form-control" name="" placeholder="personnel ID (autofill)">
+                           </div>
+                           <select class="form-control" id="">
+                              <option>select S. Contractor</option>
+                              <option></option>
+                              <option></option>
+                           </select>
+                           <select class="form-control" id="">
+                              <option>select Inv. Groups (checkbox)</option>
+                              <option></option>
+                              <option></option>
+                           </select>
+                           <select class="form-control" id="" style="margin-bottom: 50px;">
+                              <option>select partner</option>
+                              <option></option>
+                              <option></option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6">
+                        <p class="text-center necessary">Select booking date or range</p>
+                     </div>
+                  </div>
+                  <div class="text-center">
+                     <button class="btn" id="btn-contractor" style="padding: 7px 30px; color: #fff;">Book Staff</button>
+                  </div>
+               </div>
+            </form>
+            <p class="text-center addmorestaff">Want to add more than one staff at a time? Try <a href="" class="bulk-add">Bulk Add</a></p>
+         </div>
+      </div>
+   </div>
+   <!-- Core -->
+   <script src="./assets/vendor/jquery/jquery.min.js"></script>
+   <script src="./assets/vendor/popper/popper.min.js"></script>
+   <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+   <script src="./assets/vendor/headroom/headroom.min.js"></script>
+   <!-- Optional JS -->
+   <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+   <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+   <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+   <!-- Argon JS -->
+   <script src="./assets/js/argon.js?v=1.0.1"></script>
+   <script src="./assets/js/table.js"></script>
+   <script>
+         $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+      });
+      $("#menu-toggle-2").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled-2");
+         $('#menu ul').hide();
+      });
+
+      function initMenu() {
+         $('#menu ul').hide();
+         $('#menu ul').children('.current').parent().show();
+         //$('#menu ul:first').show();
+         $('#menu li a').click(
+            function() {
+               var checkElement = $(this).next();
+               if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                  return false;
+               }
+               if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                  $('#menu ul:visible').slideUp('normal');
+                  checkElement.slideDown('normal');
+                  return false;
+               }
+            }
+         );
+      }
+      $(document).ready(function() {
+         initMenu();
+      });
+   </script>
+
+
+</body>
+</html>

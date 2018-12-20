@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="MedFit">
+   <meta name="author" content="MedFit">
+   <title>MedFit</title>
+   <!-- Favicon -->
+   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   <!-- Icons -->
+   <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+   <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <!-- Argon CSS -->
+   <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+   <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
+   <link type="text/css" href="./assets/css/superclient.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <style>
+      .more-info {
+         padding: 5px 30px;
+      }
+      .info-line {
+         margin-top: 0;
+      }
+      .btn-switch {
+         border: 0.5px solid #B02018;
+         color: #B02018;
+      }
+      #btn-contractor {
+         background: linear-gradient(180deg, #154A9A 0%, #2763BF 100%);
+         border-color: #154A9A;
+         padding: 10px 50px;
+      }
+      .btn-book {
+         padding: 5px 15px;
+      }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+         .col-md-6 {
+            max-width: 100%;
+            flex: 0 0 100%;
+         }
+         .pull-right {
+            float: left;
+         }
+      }
+      @media (min-width: 576px) {
+         .modal-dialog {
+            max-width: 750px;
+            margin: 1.75rem auto;
+         }
+      }
+   </style>
+</head>
+
+<body style="background: #f9f9f9;">
+   <nav class="navbar navbar-default no-margin">
+      <div class="navbar-header fixed-brand">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+         </button>
+         <a class="navbar-brand mr-lg-5" href="./index.html">
+            <p class="logo">Med<span class="medfit">Fit</span></p>
+         </a>
+      </div>
+      <div>
+         <ul class="nav navbar-nav" style="flex-direction: inherit;">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 <img src="assets/img/alarm.png" alt="">
+                 
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">All Users</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+               </div>
+            </li>
+            <p class="notification">2</p>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 <img src="assets/img/health.png" alt="avatar">
+                  CSI Leasing Inc
+               </a>
+               <div class="dropdown-menu">
+                 <a class="dropdown-item" href="#">All Users</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                 <a class="dropdown-item" href="#">Link 3</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="btn btn-info btn-switch" href=""><img src="assets/img/switch.png"> &emsp;Switch to Super Contractor</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+         <ul class="sidebar-nav nav-pills nav-stacked" id="menu" style="padding-top: 130px;">
+            <li>
+               <a href="client-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+            </li>
+            <li>
+               <a href="client-staff.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Staff</a>
+            </li>
+            <li>
+               <a href="client-bookings.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Bookings</a>
+            </li>
+            <li class="active">
+               <a href="client-supercontractors.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Super Contractors</a>
+            </li>
+            <li>
+               <a href=""><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>Wallets</a>
+            </li>
+            <li>
+               <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>Help & Feedback</a>
+            </li>
+         </ul>
+      </div>
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid xyz">
+            <div class="space-top-twice">
+               <p class="bookings">Outsource staff - <span style="opacity: 0.7;">ExxonMobil</span></p>
+               <div class="row space-bottom">
+                  <div class="col-lg-4 col-md-5">
+                     <a href=""><img src="assets/img/arrow-blue.png" alt="arrow icon"></a>
+                     <form style="display: inline-block;">
+                        <div class="form-group">
+                           <input type="text" class="form-control" name="" placeholder="Search S. Contractors">
+                           <i class="fa fa-search search-icon" style="right: 100px;"></i>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-8 col-md-7">
+                     <div class="pull-right space-top">
+                        <button class="btn btn-round upload getaccess" id="btn-contractor" data-toggle="modal" data-target="#myModal">Outsource Staff</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="row space-bottom">
+                  <div class="col-lg-7 col-md-7">
+                     <span class="select-staff">Select staff to be outsourced to ExxonMobil </span> <span class="staff-selected">(0 staff selected)</span>
+                  </div>
+                  <div class="col-lg-5 col-md-6">
+                     <div class="pull-right">
+                        <img src="assets/img/filter.png" class="filter-icon" alt="">
+                        <span class="filter">Filter</span>
+                     </div>
+                  </div>
+               </div>  
+               <div>
+                  <table class="table table-responsive-stack" style="margin-top: 60px;">
+                     <thead>
+                        <tr>
+                           <th>
+                              <div class="checkbox">
+                                 <input type="checkbox" style="height: 20px; width: 18px;">
+                              </div>
+                           </th>
+                           <th>Staff name</th>
+                           <th>Personnel ID</th>
+                           <th>Duration (months)</th>
+                           <th>No of certs. (Due)</th>
+                           <th>Action</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Chika Faith Edidiong</td>
+                           <td>CSL1123763</td>
+                           <td>0 months</td>
+                           <td>12 (0)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" checked style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Abdul Khadri Chukwu</td>
+                           <td>CSL8973456</td>
+                           <td>0 months</td>
+                           <td>3 (1)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr><br>
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" checked style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Chika Faith Edidiong</td>
+                           <td>CSL1123763</td>
+                           <td>0 months</td>
+                           <td>12 (0)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Chika Faith Edidiong</td>
+                           <td>CSL1123763</td>
+                           <td>0 months</td>
+                           <td>12 (0)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr> 
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" checked style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Chika Faith Edidiong</td>
+                           <td>CSL1123763</td>
+                           <td>0 months</td>
+                           <td>12 (0)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="checkbox">
+                                 <input type="checkbox" style="height: 20px; width: 18px;">
+                              </div>
+                           </td>
+                           <td class="">Abdul Khadri Chukwu</td>
+                           <td>CSL8973456</td>
+                           <td>0 months</td>
+                           <td>3 (1)</td>
+                           <td class="table-button">
+                              <a href="partners-bookinginfo.html" class="btn btn-default btn-round more-info">More Info</a>
+                           </td>
+                        </tr><br>
+                     </tbody>
+                  </table>
+               </div> 
+            </div>
+         </div>
+      </div>
+   
+
+   
+
+   
+
+   <!-- The Modal -->
+   <div class="modal" id="myModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <form>
+       
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h4 class="modal-title">Outsource Staff</h4>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+
+
+               <!-- Modal body -->
+               <div class="modal-body text-center">
+                  <p class="text-20">You have selected <span class="bold">14 staff</span> to be outsourced to <span class="bold">ExxonMobil</span></p>
+                  <p class="necessary" style="opacity: 0.7;">ExxonMobil would have access to their medical certificates</p>
+                  <div>
+                     <button class="btn more-info">Go back</button>
+                     <button class="btn upload" id="btn-contractor" style="padding: 5px 30px;">Proceed</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- Core -->
+   <script src="./assets/vendor/jquery/jquery.min.js"></script>
+   <script src="./assets/vendor/popper/popper.min.js"></script>
+   <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+   <script src="./assets/vendor/headroom/headroom.min.js"></script>
+   <!-- Optional JS -->
+   <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+   <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+   <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+   <!-- Argon JS -->
+   <script src="./assets/js/argon.js?v=1.0.1"></script>
+   <script src="./assets/js/table.js"></script>
+   <script>
+         $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+      });
+      $("#menu-toggle-2").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled-2");
+         $('#menu ul').hide();
+      });
+
+      function initMenu() {
+         $('#menu ul').hide();
+         $('#menu ul').children('.current').parent().show();
+         //$('#menu ul:first').show();
+         $('#menu li a').click(
+            function() {
+               var checkElement = $(this).next();
+               if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                  return false;
+               }
+               if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                  $('#menu ul:visible').slideUp('normal');
+                  checkElement.slideDown('normal');
+                  return false;
+               }
+            }
+         );
+      }
+      $(document).ready(function() {
+         initMenu();
+      });
+   </script>
+
+
+</body>
+</html>
+
+
